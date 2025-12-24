@@ -4,3 +4,9 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .pdm-python
+DATA/
+venv/
+__pycache__/
+.env
+*.zip
+df1ea4f77b328e728711cbbe8b2df5eb7eb4830b
