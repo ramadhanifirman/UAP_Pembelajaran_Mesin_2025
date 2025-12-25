@@ -44,9 +44,9 @@ Proyek ini mengimplementasikan dan membandingkan tiga arsitektur:
 
 | Model      | Accuracy | Keterangan |
 |------------|----------|------------|
-| **LSTM** | ~XX%     | Stabil, namun terkadang sulit menangani konteks kalimat yang sangat kompleks. |
-| **IndoBERT**| **~XX%** | **Performa terbaik** dalam memahami konteks ulasan bahasa Indonesia. |
-| **DistilBERT**| ~XX%     | Kecepatan inferensi paling cepat dengan akurasi yang kompetitif. |
+| **LSTM** | 0.90%     | Memiliki stabilitas yang baik dalam data sekuensial, namun kurang optimal dalam menangani ketergantungan jarak jauh (long-range dependencies) pada kalimat kompleks. |
+| **IndoBERT**| 0.91% | Akurasi tertinggi; sangat efektif menangani nuansa bahasa, slang, dan konteks semantik bahasa Indonesia berkat arsitektur bidirectional transformer. |
+| **DistilBERT**| 0.84%     | Menawarkan keseimbangan antara performa dan efisiensi; memiliki waktu inferensi tercepat dan penggunaan sumber daya komputasi yang lebih rendah. |
 
 **Analisis Singkat**: Model berbasis Transformer (khususnya IndoBERT) cenderung lebih unggul dalam mengenali sentimen karena fitur *Self-Attention* yang memungkinkan model fokus pada kata-kata kunci dalam ulasan yang panjang atau sarkastik.
 
